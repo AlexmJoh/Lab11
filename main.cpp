@@ -33,7 +33,7 @@ int main1()
 	//Now delete the memory
 
 
-
+	
 
     return 0;
 }
@@ -52,7 +52,7 @@ int main2()
 
 	std::shared_ptr<Node<std::string>> temp = std::make_shared<Node<std::string>>("two");
 
-	cur->setNext(temp);
+	cur->setNext(temp); 
 
 	cur = cur->getNext();
 
@@ -62,6 +62,7 @@ int main2()
 	cur->setNext(temp);
 
 	cur = cur->getNext();
+	std::cout << "Cool github change right here";
 
     return 0;
 }
@@ -72,7 +73,8 @@ int main()
 
 	main1();
 	main2();
-
+	std::cout << "Cool github change right here thats slightly different than before";
+	//cool
 
     return 0;
 }
